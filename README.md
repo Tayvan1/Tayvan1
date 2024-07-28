@@ -14,3 +14,5 @@ Meu nome é Tayvan
 ### Você entrar em contato comigo 
 
 tayvanaparecido@gmail.com 
+
+![](https://tenor.com/pt-BR/search/cruzeiro-gifs)
