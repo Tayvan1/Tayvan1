@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Routine Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="login-section">
+        <h2>Login</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username">
+        <label for="password">Password:</label>
+        <input type="password" id="password">
+        <button onclick="login()">Login</button>
+    </div>
+    
+    <div id="main-section" class="hidden">
+        <header>
+            <h1>Routine Assistant</h1>
+            <nav>
+                <button onclick="showStart()">Começar</button>
+                <button onclick="showConfig()">Configuração</button>
+                <button onclick="showGoals()">Metas</button>
+            </nav>
+        </header>
+        <main>
+            <section id="start-section" class="hidden">
+                <h2>Agenda</h2>
+                <div id="agenda-container">
+                    <!-- Agenda tasks will be shown here -->
+                </div>
+                <button onclick="saveAsPDF()">Salvar como PDF</button>
+            </section>
+            
+            <section id="config-section" class="hidden">
+                <h2>Configuração</h2>
+                <div>
+                    <label for="background-color">Cor de Fundo:</label>
+                    <input type="color" id="background-color" onchange="changeBackgroundColor(this.value)">
+                </div>
+                <div id="days-container">
+                    <!-- Days of the week will be shown here -->
+                </div>
+                <div>
+                    <input type="text" id="task-input" placeholder="Nova tarefa">
+                    <select id="day-select">
+                        <option value="monday">Segunda</option>
+                        <option value="tuesday">Terça</option>
+                        <option value="wednesday">Quarta</option>
+                        <option value="thursday">Quinta</option>
+                        <option value="friday">Sexta</option>
+                        <option value="saturday">Sábado</option>
+                        <option value="sunday">Domingo</option>
+                    </select>
+                    <button onclick="addTask()">Adicionar Tarefa</button>
+                </div>
+            </section>
+            
+            <section id="goals-section" class="hidden">
+                <h2>Metas</h2>
+                <div>
+                    <h3>Longo Prazo</h3>
+                    <textarea id="long-term-goals"></textarea>
+                </div>
+                <div>
+                    <h3>Médio Prazo</h3>
+                    <textarea id="medium-term-goals"></textarea>
+                </div>
+                <div>
+                    <h3>Curto Prazo</h3>
+                    <textarea id="short-term-goals"></textarea>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
