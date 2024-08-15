@@ -1,72 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Routine Assistant</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Routine Assistant</h1>
-        <nav>
-            <button onclick="showStart()">Começar</button>
-            <button onclick="showConfig()">Configuração</button>
-            <button onclick="showGoals()">Metas</button>
-        </nav>
-    </header>
-    <main>
-        <section id="start-section">
-            <h2>Agenda</h2>
-            <div id="agenda-container">
-                <!-- Agenda tasks will be shown here -->
-            </div>
-            <button onclick="saveAsPDF()">Salvar como PDF</button>
-        </section>
-        
-        <section id="config-section" class="hidden">
-            <h2>Configuração</h2>
-            <div>
-                <label for="background-color">Cor de Fundo:</label>
-                <input type="color" id="background-color" onchange="changeBackgroundColor(this.value)">
-            </div>
-            <div id="days-container">
-                <!-- Days of the week will be shown here -->
-            </div>
-            <div>
-                <input type="text" id="task-input" placeholder="Nova tarefa">
-                <select id="day-select">
-                    <option value="monday">Segunda</option>
-                    <option value="tuesday">Terça</option>
-                    <option value="wednesday">Quarta</option>
-                    <option value="thursday">Quinta</option>
-                    <option value="friday">Sexta</option>
-                    <option value="saturday">Sábado</option>
-                    <option value="sunday">Domingo</option>
-                </select>
-                <input type="time" id="time-select">
-                <button onclick="addTask()">Adicionar Tarefa</button>
-            </div>
-        </section>
-        
-        <section id="goals-section" class="hidden">
-            <h2>Metas</h2>
-            <div>
-                <h3>Longo Prazo</h3>
-                <textarea id="long-term-goals"></textarea>
-            </div>
-            <div>
-                <h3>Médio Prazo</h3>
-                <textarea id="medium-term-goals"></textarea>
-            </div>
-            <div>
-                <h3>Curto Prazo</h3>
-                <textarea id="short-term-goals"></textarea>
-            </div>
-        </section>
-    </main>
+<html lang="pt-BR">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    <script src="script.js"></script>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <title>Guiminamflix</title>
+</head>
+
+<body>
+    <header>GUIMINAMFLIX</header>
+
+    <section class="chamada">
+        <div class="chamada-texto">
+            <h1>Melhor jogador de xadrez</h1>
+            <p>#xadrez</p>
+        </div>
+
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gt_aZ4394Hed5M=aZ4394Hed5M"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section class="categoria">
+        <h2>Jogadores</h2>
+        <div class="categoria-videos">
+            <a href="https://www.youtube.com/watch?v=pqp_CSjoz2w">
+                <img src="https://img.youtube.com/vi/pqp_CSjoz2w/maxresdefault.jpg" />
+            </a>
+            <a href="https://www.youtube.com/watch?v=pqp_CSjoz2w">
+                <img src="https://img.youtube.com/vi/pqp_CSjoz2w/maxresdefault.jpg" />
+            </a>
+            <a href="https://www.youtube.com/watch?v=tjnDhTnJcCs">
+                <img src="https://img.youtube.com/vi/tjnDhTnJcCs/maxresdefault.jpg" />
+            </a>
+            <a href="https://www.youtube.com/watch?v=LYUAnwlCPCA">
+                <img src="https://img.youtube.com/vi/LYUAnwlCPCA/maxresdefault.jpg" />
+            </a>
+            <a href="https://www.youtube.com/watch?v=KaZFopAJ0ks">
+                <img src="https://img.youtube.com/vi/KaZFopAJ0ks/maxresdefault.jpg" />
+            </a>
+        </div>
+    </section>
+
 </body>
-</html>
+
+</html>     
