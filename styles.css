@@ -1,70 +1,60 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f8ff;
-    color: #333;
-    margin: 0;
-    padding: 0;
+    color: white;
+    background: black;
+    margin: 0px;
+    font-family: "Chakra Petch", sans-serif;
+    margin-bottom: 100px;
 }
 
 header {
-    background-color: #007acc;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-}
-
-nav button {
-    background-color: #007acc;
-    border: none;
-    color: white;
-    padding: 10px;
-    margin: 5px;
-    cursor: pointer;
-}
-
-nav button:hover {
-    background-color: #005f99;
-}
-
-main {
+    border-bottom: solid 2px rgb(42, 122, 228);
     padding: 20px;
+    font-size: 32px;
+    color: rgb(42, 122, 228);
 }
 
-.hidden {
-    display: none;
-}
-
-#days-container, #agenda-container, #routine-container {
-    margin: 20px 0;
-}
-
-.task {
-    background-color: #e0f7fa;
-    border: 1px solid #007acc;
-    padding: 10px;
-    margin: 5px 0;
+.chamada {
+    background: rgb(184, 156, 213);
+    padding-bottom: 80px;
+    padding-top: 80px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-.task.completed {
-    text-decoration: line-through;
-    background-color: #b2dfdb;
+.chamada-texto {
+    margin-right: 5%;
 }
 
-.task button {
-    background-color: #007acc;
-    border: none;
-    color: white;
-    cursor: pointer;
+h1 {
+    font-size: 40px;
 }
 
-.task button:hover {
-    background-color: #005f99;
+p {
+    font-size: 20px;
 }
 
-textarea {
-    width: 100%;
-    height: 100px;
-    margin-bottom: 20px;
+.categoria-videos {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+}
+
+.categoria {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 50px;
+}
+
+.categoria-videos img {
+    opacity: 0.5;
+    height: 200px;
+}
+
+.categoria-videos img:hover {
+    opacity: 1.0;
+    border: 3px solid green;
+}
+
+.categoria h2 {
+    color: rgb(42, 122, 228);
 }
